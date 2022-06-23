@@ -1,2 +1,2 @@
 # 30DaysOfJavaScriptChallenge
-Here's my progress day by day of the 30 Days of JavaScriptChallenge
+Here's my progress day by day of the #30DaysofJavaScriptChallenge
