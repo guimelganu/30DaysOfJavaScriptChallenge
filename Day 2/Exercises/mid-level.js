@@ -14,7 +14,7 @@ let conversion = parseInt(val);
 
 console.log(`${val} es extrictamente igual a 0: ${conversion === 0}`);
 
-let float = parseFloat(conversion);
+let num = '9.81';
+let numFloat = parseFloat(num);
 
-
-
+console.log(numFloat === 10);
