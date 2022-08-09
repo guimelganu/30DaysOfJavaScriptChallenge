@@ -87,4 +87,3 @@ console.log(now.getHours());
 console.log(now.getMinutes());
 // Find out the numbers of seconds elapsed from January 1, 1970 to now.
 console.log(now.getTime());
-
