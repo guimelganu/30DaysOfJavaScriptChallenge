@@ -61,14 +61,14 @@ firstName.length > 7
 ? console.log("Your name is long!")
 : console.log("Your name is short!");
 
-// Compare your first name length and your family name length and you should get this output.
+//11.- Compare your first name length and your family name length and you should get this output.
 let familyName = "García";
 
 firstName.length > familyName.length 
 ? console.log("Your first name is longer than your last name.")
 : console.log("Your last name ir longer than your first name.");
 
-//Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
+//12.- Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
 
 let myAge =  25;
 let yourAge = 35;
@@ -76,14 +76,27 @@ myAge > yourAge
 ? console.log(`I'm (${myAge} - ${yourAge} older than you.)`)
 : console.log(`I'm (${yourAge} - ${myAge} younger than you.)`);
 
-// Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
-let now = new Date();
+//13.- Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+const now = new Date();
 let year = prompt('Enter birth year: ');
 let yearsOld = now.getFullYear() - year;
 
 year >= 18
 ? console.log(`You have ${yearsOld}. You are old enough to drive.`)
-: console.log(`You have ${yearsOld}. You will be allowed to drive after (${18} - ${yearsOld}) years.`)
+: console.log(`You have ${yearsOld}. You will be allowed to drive after ${18} - ${yearsOld} years.`)
+
+//14.- Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years.
+
+let age = prompt('Enter number of years you live: ');
+alert(`You lived ${age} * ${31536000}`);
+
+//15.- Create a human readable time format using the Date time object.
+// YYYY-MM-DD HH:mm
+// DD-MM-YYYY HH:mm
+// DD/MM/YYYY HH:mm
+console.log(`${now.getFullYear()}-${now.getMonth()}-${now.getDate()} ${now.getHours()}:${now.getMinutes()}`);
+console.log(`${now.getDate()}-${now.getMonth()}-${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`);
+console.log(`${now.getDate()}/${now.getMonth()}/${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`);
 
 
 
