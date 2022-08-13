@@ -143,13 +143,30 @@ arraa.push('itemPushed')
 console.log(arraa) //['item1', 'item2', 'item3', 'itemPushed']
 
 // pop: Removing item in the end.
-arraa.pop();
+arraa.pop()
 console.log(arraa) //['item1', 'item2', 'item3']
 
+// shift: Removing one array element in the beginning of the array.
+arraa.shift()
+console.log(arraa)
 
+// unshift: Adding array element in the beginning of the array.
+arraa.unshift('Hello there!');
+console.log(arraa)
 
+// reverse: reverse the order of an array.
+arraa.reverse()
+console.log(arraa)
 
+// sort: arrange array elements in ascending order. 
+webTechs.sort()
+console.log(webTechs)
 
-
-
-
+// Array can store different data types including an array itself.
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+const fullStack = [frontEnd, backEnd]
+console.log(fullStack)   // [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
+console.log(fullStack.length)  // 2
+console.log(fullStack[0])  // ["HTML", "CSS", "JS", "React", "Redux"]
+console.log(fullStack[1]) // ["Node", "Express", "MongoDB"]
