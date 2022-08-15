@@ -79,4 +79,19 @@ console.log(itCompanies.slice(0,3))
 //18.- Slice out the last 3 companies from the array
 console.log(itCompanies.slice(4))
 
+//19.- Slice out the middle IT company or companies from the array
+indexx=itCompanies.length/2
+console.log(itCompanies.slice(indexx, ++indexx))
+
+//20.- Remove the first IT company from the array
+console.log(itCompanies.shift())
+
+//21.- Remove the middle IT company or companies from the array
+console.log(itCompanies.splice(indexx,1))
+
+//22.- Remove the last IT company from the array
+console.log(itCompanies.pop());
+
+//23.- Remove all IT companies
+console.log(itCompanies.splice(0,itCompanies.length))
 
