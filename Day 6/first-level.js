@@ -132,3 +132,34 @@ for(let i = 0; i <= 100; i++){
     }
 }
 console.log(`The sum of all evens from 0 to 100 is ${even}. And the sum of all odds from 0 to 100 is ${odd}.`)
+
+// Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
+let nwarr = [even, odd]
+console.log(nwarr)
+
+// Develop a small script which generate array of 5 random numbers
+let random = []
+for(let i = 0; i < 5; i++){
+    random.push(Math.floor(Math.random() * 10 + 1))
+}
+console.log(random)
+// Develop a small script which generate array of 5 random numbers and the numbers must be unique
+let random2 = []
+let flag2
+for(let i = 0; i < 5; i++){
+    flag2 = Math.floor(Math.random() * 10 + 1)
+    if(random2.indexOf(flag2) == -1)
+    {
+        random2.push(flag2)
+    }
+}
+console.log(random2)
+
+// Develop a small script which generate a six characters random id:
+let result = ''
+let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+let charactersLength = characters.length
+for (let i = 0; i < 6; i++ ) {
+  result += characters.charAt(Math.floor(Math.random() * charactersLength))
+}
+console.log(result)

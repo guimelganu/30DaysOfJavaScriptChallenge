@@ -202,11 +202,16 @@ console.log(string3.includes('java'))     // false
 console.log(string3.includes('Java'))     // true
 
 let string4 = '30 Days Of JavaScript'
+
 console.log(string4.replace('JavaScript', 'Python')) // 30 Days Of Python replace(): takes as a parameter the old substring and a new substring.
+
 console.log(string4.charAt(0))        // 3 charAt(): Takes index and it returns the value at that index
+
 console.log(string4.charCodeAt(3))  // D ASCII number is 68 charCodeAt(): Takes index and it returns char code (ASCII number) of the value at that index
+
 console.log(string4.indexOf('D')) // 3 indexOf(): Takes a substring and if the substring exists in a string it returns the first position of the substring 
 //if does not exist it returns -1
+
 console.log(string4.indexOf('script'))     // -1 Upper case sensitive.
 
 let string5 = 'I love JavaScript. If you do not love JavaScript what else can you love.'
@@ -217,10 +222,14 @@ let string6 = '30'
 console.log(string6.concat("Days", "Of", "JavaScript")) // 30DaysOfJavaScript concat(): it takes many substrings and joins them.
 
 let string7 = 'Love is the best to in this world'
+
 console.log(string7.startsWith('Love'))   // true startsWith: it takes a substring as an argument and it checks if the string starts with that specified substring. 
 //It returns a boolean(true or false).
+
 console.log(string7.startsWith('love'))   // false
+
 console.log(string7.startsWith('world'))  // false
+
 // endsWith: it takes a substring as an argument and it checks if the string ends with that specified substring. It returns a boolean(true or false).
 console.log(string7.endsWith('world'))         // true
 console.log(string7.endsWith('love'))          // false
@@ -229,15 +238,20 @@ console.log(string7.endsWith('in the world')) // true
 //search: it takes a substring as an argument and it returns the index of the first match. The search value can be a string or a regular expression pattern.
 console.log(string5.search('love'))          // 2
 console.log(string5.search(/javascript/gi))  // 7
+
 //Regular patterns looks like:
 let pattern = 'love' 
 let patternOne = /love/     // with out any flag
 let patternTwo = /love/gi   // g-means to search in the whole text, i - case insensitive
+
 //match: it takes a substring or regular expression pattern as an argument and it returns an array if there is match if not it returns null. Let us see how a regular expression pattern looks like. It starts with / sign and ends with / sign.
 console.log(string5.match('love')) //["love", index: 2, input: "I love JavaScript. If you do not love JavaScript what else can you love.", groups: undefined]
+
 console.log(string5.match(patternTwo))   // ["love", "love", "love"]
+
 //repeat(): it takes a number as argument and it returns the repeated version of the string.
 console.log(pattern.repeat(10)) // lovelovelovelovelovelovelovelovelovelove
+
 //To check the data type of a certain variable we use the typeof method.
 let jobs;
 console.log(typeof job) // undefined
